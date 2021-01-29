@@ -83,7 +83,7 @@ class NewPlaceViewController: UITableViewController {
         guard
             let identifier = segue.identifier,
             let mapVC = segue.destination as? MapViewController
-            else {return}
+        else {return}
         
         mapVC.incomeSegueIdentifier = identifier
         mapVC.mapViewControllerDelegate = self
